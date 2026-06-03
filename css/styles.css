@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/* FONDOS */
+    --bg-main: #0A0A0A;        /* fondo principal */
+    --bg-bordes: #1A1A1A;     /* secciones/cards */
+  
+/* TEXTO */
+    --text-primary: #EAEAEA;   /* texto principal */
+    --text-secondary: #AAAAAA; /* texto secundario */
+
+/* COLORES PRINCIPALES */
+    --color-primary: #FFD500;  /* amarillo neon (principal) */
+    --color-secondary: #00F0FF; /* azul electrico */
+    --color-accent: #C9A227;   /* dorado */
+    --color-danger: #FF3B3B;   /* rojo (alertas o detalles) */
+
+    --glow-primary: 0 0 5px #FFD500;
+    --glow-secondary: 0 0 5px #00F0FF;
+}
+
+/* ESTILOS */
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+h1, h2, h3, a{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: var(--glow-primary);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+ /* ESTRUCTURA */
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid var(--bg-bordes);
+}
+
+.logo {
+    height: auto;
+    width: 10%;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav li {
+    margin: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.nav li a:hover {
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+
+.hero {
+    background-repeat: round;
+    height: 90vh;
+ }
