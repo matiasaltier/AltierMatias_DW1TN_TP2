@@ -34,10 +34,10 @@ body {
 h1, h2, h3, a{
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-    text-shadow: var(--glow-primary);
 }
 
 h1 {
+    text-shadow: var(--glow-primary);
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
 }
@@ -46,11 +46,16 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-
- /* ESTRUCTURA */
+a {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+/* ESTRUCTURA */
 
 header {
-    height: 10vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -58,23 +63,18 @@ header {
 }
 
 .logo {
-    height: auto;
-    width: 10%;
+    padding-left: 1rem;
 }
 
 .nav {
     display: flex;
     list-style: none;
     align-items: center;
+    padding-left: 7rem;
 }
 
 .nav li {
     margin: 10px;
-}
-
-.nav li a {
-    text-decoration: none;
-    color: var(--text-primary);
 }
 
 .nav li a:hover {
@@ -89,13 +89,26 @@ header {
 }
 
 .redes {
-    width: 40px;
-    height: 40px;
+    height: 30px;
+    width: auto;
     margin-left: 30px;
 }
 
 
 .hero {
+    background-image: url(../assets/img/bghero.png);
     background-repeat: round;
-    height: 90vh;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
  }
+
+.hero p {
+    text-overflow: ellipsis;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 500px;
+}
+
