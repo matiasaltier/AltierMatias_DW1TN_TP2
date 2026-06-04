@@ -42,6 +42,11 @@ h1 {
     font-weight: 700;
 }
 
+h2, h3 {
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+}
+
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -52,6 +57,12 @@ a {
     text-decoration: none;
     color: var(--text-primary);
 }
+
+strong {
+    color: var(--color-primary);
+    text-shadow: 0 0 15px var(--color-accent);
+}
+
 /* ESTRUCTURA */
 
 header {
@@ -103,7 +114,6 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 2px solid var(--bg-bordes);
  }
 
 .hero p {
@@ -118,11 +128,6 @@ header {
     font-size: 4.2rem;
     text-align: left;
     width: 500px;
-}
-
-.hero strong {
-    color: var(--color-primary);
-    text-shadow: 0 0 15px var(--color-accent);
 }
 
 .btn {
@@ -142,4 +147,105 @@ header {
 button:hover {
     background-color: var(--color-accent);
     color: var(--text-primary);
+}
+
+.biografia {
+    margin-top: 1rem;
+    border-top: solid 2px var(--bg-bordes);
+    height: 60vh;
+    display: flex;
+}
+
+.biografia-img {
+    width: 30%;
+}
+
+.biografia-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.biografia-contenido {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.biografia-contenido h2 {
+    padding-bottom: 2rem;
+}
+
+.biografia-contenido h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-primary);
+  margin-top: 1rem;
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+.contenido-texto p{
+    padding-bottom: 1rem;
+}
+
+.contenido-logos {
+    display: flex;
+    gap: 6rem;
+}
+
+.contenido-logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contenido-logos div img {
+    width: 80px;
+    height: auto;
+}
+
+.contenido-logos div p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--color-primary);
+}
+
+.musica {
+    padding-top: 3rem;
+    border-top: solid 2px var(--bg-bordes);
+    height: 60vh;
+    display: flex;
+}
+
+.musica-caja {
+    width: 60%;
+}
+
+.caja-texto {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80vh;
+}
+
+.caja-texto h2 {
+    padding-bottom: 1rem;
+}
+
+.caja-texto h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-primary);
+  margin-top: 1rem;
+  box-shadow: 0 0 8px var(--color-primary);
 }
