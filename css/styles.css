@@ -103,12 +103,43 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 2px solid var(--bg-bordes);
  }
 
 .hero p {
     text-overflow: ellipsis;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
     width: 500px;
 }
 
+.hero h1 {
+    font-size: 4.2rem;
+    text-align: left;
+    width: 500px;
+}
+
+.hero strong {
+    color: var(--color-primary);
+    text-shadow: 0 0 15px var(--color-accent);
+}
+
+.btn {
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    box-shadow: 0 0 6px var(--color-primary);
+    border-radius: 5px;
+    color: var(--color-primary);
+    border: none;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-right: 14rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+    color: var(--text-primary);
+}
