@@ -50,6 +50,7 @@ h2, h3 {
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    line-height: 1.6;
 }
 a {
     font-family: 'Orbitron', sans-serif;
@@ -66,11 +67,14 @@ strong {
 /* ESTRUCTURA */
 
 header {
+    position: sticky;
+    top: 0;
     height: 8vh;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 2px solid var(--bg-bordes);
+    background-color: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -122,7 +126,6 @@ header {
     padding-bottom: 3rem;
     font-size: 1.1rem;
     width: 500px;
-    line-height: 1.6;
 }
 
 .hero h1 {
@@ -153,17 +156,18 @@ button:hover {
 .biografia {
     margin-top: 1rem;
     border-top: solid 2px var(--bg-bordes);
-    height: 60vh;
+    height: 73vh;
     display: flex;
 }
 
 .biografia-img {
-    width: 30%;
+    width: 35%;
 }
 
 .biografia-img img {
     width: 100%;
     height: 100%;
+    border-right: 2px solid var(--bg-bordes);
 }
 
 .biografia-contenido {
@@ -221,10 +225,11 @@ button:hover {
 .musica {
     padding-top: 3rem;
     border-top: solid 2px var(--bg-bordes);
-    height: 68vh;
+    height: 80vh;
     display: flex;
     background-image: url(../assets/img/concierto.png);
     background-position: right;
+    background-size: 80%;
     background-repeat: no-repeat;
 }
 
@@ -282,4 +287,83 @@ button:hover {
 
 .listas img {
     width: 8vh;
+}
+
+.video {
+    display: flex;
+    height: 98vh;
+    border-top: 2px solid var(--bg-bordes);
+}
+
+.video-contenedor {
+    width: 100%;
+    border-right: 2px solid var(--bg-bordes);
+}
+
+.video-contenedor h2 {
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.video-contenedor h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin-top: 1rem;
+    box-shadow: 0 0 8px var(--color-primary);
+  }
+  
+.video-live {
+    width: 95%;
+    height: auto;
+    padding: 0 0 2rem 3rem;
+}
+
+.video-contenedor p {
+    padding-left: 3rem;
+}
+
+.video-cita {
+    display: flex;
+    background-image: url(../assets/img/video-img.jpg);
+    background-size: cover;
+    background-repeat: space;
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+}
+
+#comilla {
+    margin-left: 1rem;
+}
+
+.cita-comilla {
+    display: flex;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+.video-cita img {
+    width: 50px;
+}
+
+.cita {
+    padding: 1rem 3rem 0 3rem;
+}
+
+.cita blockquote {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.cita p {
+    text-align: right;
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+}
+
+.footer-container {
+    border-top: 2px solid var(--bg-bordes);
+    padding: rem;
 }
