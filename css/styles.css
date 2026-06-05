@@ -122,6 +122,7 @@ header {
     padding-bottom: 3rem;
     font-size: 1.1rem;
     width: 500px;
+    line-height: 1.6;
 }
 
 .hero h1 {
@@ -220,8 +221,11 @@ button:hover {
 .musica {
     padding-top: 3rem;
     border-top: solid 2px var(--bg-bordes);
-    height: 60vh;
+    height: 68vh;
     display: flex;
+    background-image: url(../assets/img/concierto.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .musica-caja {
@@ -248,4 +252,34 @@ button:hover {
   background-color: var(--color-primary);
   margin-top: 1rem;
   box-shadow: 0 0 8px var(--color-primary);
+}
+
+
+.contenido-listas {
+    padding: 3rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.listas ul {
+    padding-left: 1rem;
+}
+
+.listas ul li::marker {
+  color: var(--color-primary);
+}
+
+.listas ul li {
+    padding-top: 0.8rem;
+}
+
+.listas img {
+    width: 8vh;
 }
